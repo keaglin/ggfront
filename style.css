@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 2px black solid;
+  /* border: 2px black solid; */
 }
 
 body {
@@ -18,4 +18,13 @@ header, footer, main {
 
 footer {
   margin-bottom: 0 !important;
+}
+
+nav {
+  box-shadow: none !important;
+}
+
+.nav-wrapper > a:hover {
+  background-color: 1a237e !important; 
+  color: #80deea !important;
 }
