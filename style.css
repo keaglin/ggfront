@@ -25,6 +25,11 @@ nav {
 }
 
 .nav-wrapper > a:hover {
-  background-color: 1a237e !important; 
-  color: #80deea !important;
+  background-color: #1a237e !important; 
+  color: #69f0ae !important;
+}
+
+nav ul a:hover {
+  background-color: #1a237e !important; 
+  color: #69f0ae !important;
 }
