@@ -26,10 +26,19 @@ nav {
 
 .nav-wrapper > a:hover {
   background-color: #1a237e !important; 
+  color: white !important;
+}
+
+a {
   color: #69f0ae !important;
 }
 
-nav ul a:hover {
+/* nav  */
+ul a:hover {
   background-color: #1a237e !important; 
-  color: #69f0ae !important;
+  color: white !important;
+}
+
+.brand-logo {
+  padding-left: 20px !important;
 }
