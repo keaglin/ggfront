@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  /* border: 2px black solid; */
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, footer, main {
+  min-width: 100%;
+}
+
+footer {
+  margin-bottom: 0 !important;
+}
+
+nav {
+  box-shadow: none !important;
+}
+
+.nav-wrapper > a:hover {
+  background-color: #1a237e !important; 
+}
+
+a {
+  color: #69f0ae !important;
+}
+
+a:hover {
+  color: white !important;
+}
+
+.brand-logo {
+  padding-left: 20px !important;
+}
