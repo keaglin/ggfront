@@ -1,6 +1,6 @@
 <template>
-  <div class="games">
-    <p>issa index</p>
+  <div class="game-page">
+    <p>issa games page</p>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    testing
+    testing the site index
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 {
-  "name": "webvue",
+  "name": "gg-vue",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Kevon",
@@ -13,6 +13,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "npm": "^5.8.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
