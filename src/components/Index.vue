@@ -1,12 +1,21 @@
 <template>
   <div class="game-page">
-    <p>issa games page</p>
+    <div class="center" v-if="loading">
+      <i class="fas fa-compass fa-spin fa-3x"></i>
+    </div>
+    <p>games finna be here</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Index'
+  name: 'Index',
+  data () {
+    return {
+      games: [],
+      loading: false
+    }
+  }
 }
 </script>
 
