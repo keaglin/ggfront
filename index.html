@@ -16,25 +16,28 @@
     <nav class="indigo darken-4">
         <div class="nav-wrapper">
           <a href="/" class="brand-logo center">Got Game?</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-ellipsis-v"></i></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-ellipsis-v"></i></a>
           <ul id="nav-mobile" class="hide-on-med-and-down">
             <li><a href="/#/games">GAMES</a></li>
             <li><a href="/#/forum">FORUM</a></li>
             <li><a href="/#/posts">POSTS</a></li>
-          </ul>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="/#/signup">SIGN UP</a></li> 
-            <li><a href="/#/login">LOGIN</a></li>
+          <!-- </ul>
+          <ul class="right hide-on-med-and-down"> -->
+            <li class="right"><a href="/#/signup">SIGN UP</a></li> 
+            <li class="right"><a href="/#/login">LOGIN</a></li>
           </ul>
           <ul class="sidenav" id="mobile-demo">
-            <li><a href="/#/games">GAMES</a></li>
-            <li><a href="/#/forum">FORUM</a></li>
-            <li><a href="/#/posts">POSTS</a></li>
+            <li class="center"><a href="/#/games">GAMES</a></li>
+            <li class="center"><a href="/#/forum">FORUM</a></li>
+            <li class="center"><a href="/#/posts">POSTS</a></li>
+            <li class="center"><a href="/#/signup">SIGN UP</a></li> 
+            <li class="center"><a href="/#/login">LOGIN</a></li>
           </ul>
         </div>
       </nav>
   </header>
   <main class="row">
+    <div id="background"></div>
     <div id="app">
       <router-view></router-view>
     </div>

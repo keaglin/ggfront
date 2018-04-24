@@ -3,14 +3,16 @@
     <div class="center" v-if="loading">
       <i class="fas fa-compass fa-spin fa-3x"></i>
     </div>
-    <p>games finna be here</p>
+    <div>
+      <p>games finna be here</p>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Index',
-  data () {
+  data: function () {
     return {
       games: [],
       loading: false
