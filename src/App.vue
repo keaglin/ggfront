@@ -9,35 +9,34 @@
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  data: function () {
-    return {
-      authenticated: false
-    }
-  },
-  created () {
-    this.isAuthenticated()
-  },
-  watch: {
-    // Everytime the route changes, check for auth status
-    '$route': 'isAuthenticated'
-  },
-  methods: {
-    async isAuthenticated () {
-      this.authenticated = await this.$auth.isAuthenticated()
-    },
-    login () {
-      this.$auth.loginRedirect('/')
-    },
-    async logout () {
-      await this.$auth.logout()
-      await this.isAuthenticated()
+  name: 'App'
+  // data: function () {
+  //   return {
+  //     authenticated: false
+  //   }
+  // },
+  // created () {
+  //   this.isAuthenticated()
+  // },
+  // watch: {
+  //   // Everytime the route changes, check for auth status
+  //   '$route': 'isAuthenticated'
+  // },
+  // methods: {
+  //   async isAuthenticated () {
+  //     this.authenticated = await this.$auth.isAuthenticated()
+  //   },
+  //   login () {
+  //     this.$auth.loginRedirect('/')
+  //   },
+  //   async logout () {
+  //     await this.$auth.logout()
+  //     await this.isAuthenticated()
 
-      // Navigate back to home
-      this.$router.push({ path: '/' })
-    }
-  }
+  //     // Navigate back to home
+  //     this.$router.push({ path: '/' })
+  //   }
+  // }
 }
 </script>
