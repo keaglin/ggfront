@@ -4,7 +4,7 @@
       <i class="fas fa-compass fa-spin fa-3x"></i>
     </div>
     <div class="row">
-      <p>games finna be here</p>
+      <!-- <p>games finna be here</p> -->
       <div v-if="games && games.length">
         <ul>
           <li v-for="game in games" :key="game.id" class="col-md-4 cards">
