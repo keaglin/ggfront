@@ -38,7 +38,7 @@ export default {
   async created() {
     // this.loading = true
     try {
-      const response = await axios.get('http://localhost:8000/api/games?format=json')
+      const response = await axios.get('https://dry-atoll-90328.herokuapp.com/api/games/')
       this.games = response.data
       this.loading = false
     }
