@@ -1,6 +1,7 @@
 <template>
 <div>
-  issa test
+  <h3>{{game.title}}</h3>
+  <img :src="game.img" class="img-responsive game-cover" :alt="game.title">
 </div>
 </template>
 
@@ -8,7 +9,9 @@
 export default {
   name: 'GameDetail',
   data: function () {
-    return {}
+    return {
+      game: this.$route.params.game
+    }
   }
 }
 </script>
