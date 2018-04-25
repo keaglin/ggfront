@@ -8,7 +8,9 @@
       <div v-if="games && games.length">
         <ul>
           <li v-for="game in games" :key="game.id" class="col-md-4 cards">
-            <img :src="game.img" class="img-responsive game-cover" :alt="game.title">
+            <router-link :to="{name: 'GameDetail', params: { title: game.title } }">
+              <img :src="game.img" class="img-responsive game-cover" :alt="game.title">
+            </router-link>
             <!-- <h3>{{ game.title }}</h3> -->
           </li>
         </ul>
@@ -27,7 +29,7 @@
 <script>
 import axios from 'axios'
 export default {
-  name: 'Index',
+  name: 'GameList',
   data: function () {
     return {
       games: [],
@@ -35,7 +37,7 @@ export default {
       loading: true
     }
   }, 
-  async created() {
+  async mounted() {
     // this.loading = true
     try {
       const response = await axios.get('https://dry-atoll-90328.herokuapp.com/api/games/')
